@@ -1,0 +1,264 @@
+
+/*------------------------------------------------------------------*/
+/*                         All pages                                */
+/*------------------------------------------------------------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'EB Garamond', Times, serif;
+}
+
+body{
+	font-family: 'EB Garamond', Times, serif;
+	background-color:#e9e9e7;
+}
+
+@media screen and (max-width: 768px) {
+	#BodyPortfolio{
+		background-color:rgba(134, 134, 134, 0.086);
+}
+}
+
+#Logo{
+	position: relative;
+	font-size: 40px;
+    float: left;
+	color: #211656;
+	padding-left: 16%;
+	padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	#Logo{
+	height: 65px;
+	width: 95px;
+}
+}
+@media screen and (max-width: 450px) {
+	#Logo{
+	height: 55px;
+	width: 80px;
+}
+}
+
+.headingTitle{
+	font-size: 40px;
+	color: #211656;
+	margin-top: 100px;
+	margin-left: 16%;	
+	margin-bottom: 20px;
+
+}
+
+/*------------------------------------------------------------------*/
+/*                           NAV BAR                                */
+/*------------------------------------------------------------------*/
+
+
+
+nav{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+
+.nav-links{
+	display: flex;
+	list-style: none;
+	width: 50%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+	float: right;
+	padding-right: 16%;
+	padding-top: 20px;
+	border: solid 3px #211656;
+
+}
+
+.nav-links li a{
+	color: #211656 ;
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 8px;
+	text-decoration: underline rgba(0, 0, 0, 0) 4px;
+	transition: text-decoration-color 1000ms, text-underline-offset 1000ms;
+	text-underline-offset: 0.2em;
+	background-position: right bottom;
+	border: solid 3px #211656;
+
+
+
+}
+.nav-links li a:hover {
+	text-decoration-color: #D4DCF2;
+	background-position: left bottom;
+}
+
+@media screen and (max-width: 768px){
+	.nav-links li a{
+		margin-right: 15px;
+		font-size: 17px;
+	}
+
+
+}
+@media screen and (max-width: 450px) {
+
+	.line{
+		width: 30px;
+		height: 3px;
+		margin: 5px;
+	}
+
+	nav{
+		position: absolute;
+		width: 100%;
+		background-color: white;
+	}
+
+	.hamburger{
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%,-50%);
+		z-index: 4;
+	}
+	.nav-links{
+		position: fixed;
+		background: rgba(116, 77, 77, 0);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 100% -1%);
+		-webkit-clip-path:circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+		z-index: 3;
+
+	}
+
+	.nav-links.open{
+		clip-path: circle(1000px at 100% -1%);
+		-webkit-clip-path:circle(1000px at 90% -10%);
+		pointer-events: all;
+		background-color: #788585;
+	}
+	.nav-links li{
+		opacity: 0px;
+	}
+	.nav-links li a {
+		font-size: 25px;
+		color: white;
+	}
+	.nav-links li:nth-child(1){
+		transition: all 0.5s ease 0.2;
+	}
+	.nav-links li:nth-child(2){
+		transition: all 0.5s ease 0.4;
+	}
+	.nav-links li:nth-child(3){
+		transition: all 0.5s ease 0.6;
+	}
+	li.fade{
+		opacity: 1;
+	}
+}
+
+
+
+/*------------------------------------------------------------------*/
+/*                         Home PAGE                                */
+/*------------------------------------------------------------------*/
+
+/* ELEMENT FOR INTRODUCTION */
+#heroPhoto{
+	width: 68%;
+	height: auto;
+	display: block;
+	margin-left: 16%;
+	margin-right: 16%;
+	margin-top: 0px;
+}
+
+.introPhotoContainer{
+	position: relative;
+	text-align: center;
+
+
+}
+.bottom-left{
+	width: 40%;
+	position: absolute;
+	bottom: 8px;
+	left: 186px;
+	border: solid 3px #2708c000;
+  
+}
+
+#UXTitle{
+	font-size: 60px;
+	color: #211656;
+}
+
+#portfolioTitle{
+	color: #211656;
+	font-size: 80px;
+	text-align: center;
+
+}
+
+.bodyText{
+	color: #211656;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/* About Me Section */
+
+
+.containerFlex{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	margin-left: 16%;
+	margin-right: 16%;
+	margin-bottom: 100px;
+	color: #211656;
+	font-size: 15px;
+}
+
+#aboutText{
+	padding: 20px;
+	padding-left: 0px;
+}
+#collage{
+	display: block;
+	width: 50%s;
+}
+
+
+/*------------------------------------------------------------------*/
+/*                         Skills Page                              */
+/*------------------------------------------------------------------*/
+
+#skillImage{
+	width: 800px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.skillsText{
+	margin-left: 16%;
+	margin-right: 16%;
+	color: #211656;
+	font-size: 20px;
+	margin-bottom: 100px;
+}

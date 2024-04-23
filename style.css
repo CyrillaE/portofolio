@@ -236,6 +236,7 @@ ul.nav-links{
 	margin-bottom: 170px;
 	color: #211656;
 	font-size: 15px;
+	position: relative;
 }
 
 .aboutTextLeft{

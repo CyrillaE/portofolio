@@ -27,7 +27,8 @@ body{
     float: left;
 	color: #211656;
 	padding-left: 16%;
-	padding-top: 30px;
+	margin-top: 20px;
+	
 }
 
 @media screen and (max-width: 768px) {
@@ -48,7 +49,7 @@ body{
 	color: #211656;
 	margin-top: 100px;
 	margin-left: 16%;	
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 
 }
 
@@ -68,16 +69,19 @@ nav{
 .nav-links{
 	display: flex;
 	list-style: none;
-	width: 50%;
+	width: 30%;
 	height: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	margin-left: auto;
 	float: right;
-	padding-right: 16%;
-	padding-top: 20px;
-	border: solid 3px #211656;
+	padding: 0px;
+	margin-right: 16%;
 
+}
+
+ul.nav-links{
+	margin-bottom: 0px;
 }
 
 .nav-links li a{
@@ -89,7 +93,6 @@ nav{
 	transition: text-decoration-color 1000ms, text-underline-offset 1000ms;
 	text-underline-offset: 0.2em;
 	background-position: right bottom;
-	border: solid 3px #211656;
 
 
 
@@ -184,6 +187,7 @@ nav{
 	margin-left: 16%;
 	margin-right: 16%;
 	margin-top: 0px;
+	padding: 0px;
 }
 
 .introPhotoContainer{
@@ -229,18 +233,29 @@ nav{
 	flex-direction: rows;
 	margin-left: 16%;
 	margin-right: 16%;
-	margin-bottom: 100px;
+	margin-bottom: 170px;
 	color: #211656;
 	font-size: 15px;
 }
 
-#aboutText{
+.aboutTextLeft{
 	padding: 20px;
 	padding-left: 0px;
+	font-size: 20px;
+}
+
+.aboutTextRight{
+	padding-left: 80px;
+	font-size: 20px;
+	display: block;
+	margin: 30px;
 }
 #collage{
 	display: block;
-	width: 50%s;
+	width: 400px;
+	height: 400px;
+	padding-top: 80px;
+	margin-top: 40px;
 }
 
 
@@ -248,17 +263,31 @@ nav{
 /*                         Skills Page                              */
 /*------------------------------------------------------------------*/
 
+.skillsText{
+	margin-left: 16%;
+	margin-right: 16%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	color: #211656;
+	font-size: 20px;
+}
+
 #skillImage{
+	margin-top: 100px;
 	width: 800px;
 	height: auto;
 	display: block;
 	margin: auto;
 }
 
-.skillsText{
-	margin-left: 16%;
-	margin-right: 16%;
-	color: #211656;
-	font-size: 20px;
-	margin-bottom: 100px;
+#goodreadPhoto{
+	width: 30%;
+}
+#jobPhoto{
+	width: 570px;
+	height: auto;
+}
+
+#ufoPhoto{
+	width: 400px;
 }

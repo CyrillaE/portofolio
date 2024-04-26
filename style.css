@@ -197,10 +197,9 @@ ul.nav-links{
 
 }
 .bottom-left{
-	width: 40%;
 	position: absolute;
 	bottom: 8px;
-	left: 186px;
+	left: 20%;
 	border: solid 3px #2708c000;
   
 }
@@ -208,6 +207,7 @@ ul.nav-links{
 #UXTitle{
 	font-size: 60px;
 	color: #211656;
+
 }
 
 #portfolioTitle{
@@ -222,6 +222,8 @@ ul.nav-links{
 	font-size: 20px;
 	text-align: center;
 }
+
+
 
 
 /* About Me Section */
@@ -251,19 +253,72 @@ ul.nav-links{
 	font-size: 20px;
 	margin: 30px;
 }
+
+.collagePicture{
+	display: inline-block;
+	height: 500px;
+
+}
 #collage{
 	display: block;
 	width: 400px;
-	height: 400px;
 	padding-top: 80px;
 	margin-top: 40px;
 }
+
+.collageText{
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+}
+
+
+.goingBackMenu{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	justify-content: space-evenly;
+	margin-left: 16%;
+	margin-right: 16%;
+	margin-bottom: 170px;
+	color: #211656;
+	font-size: 20px;
+	position: relative;
+}
+
+.goingBackButton{
+	text-decoration: none;
+	color: #211656;
+	background-color: #D4DCF2;
+	padding: 8px;
+	border-radius: 8px;
+	text-decoration: none;
+	list-style: none;
+}
+
+.goingBackButton:hover{
+	text-decoration: none;
+	text-decoration-color: #bd0d7a;
+
+}
+
 
 
 /*------------------------------------------------------------------*/
 /*                         Skills Page                              */
 /*------------------------------------------------------------------*/
 
+
+.containerSkills{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	margin-left: 16%;
+	margin-right: 16%;
+	color: #211656;
+	position: relative;
+
+}
 .skillsText{
 	margin-left: 16%;
 	margin-right: 16%;
@@ -273,6 +328,10 @@ ul.nav-links{
 	font-size: 20px;
 }
 
+#officeImage{
+	width: 200px;
+}
+
 #skillImage{
 	margin-top: 100px;
 	width: 800px;
@@ -280,6 +339,8 @@ ul.nav-links{
 	display: block;
 	margin: auto;
 }
+
+
 
 #goodreadPhoto{
 	width: 30%;

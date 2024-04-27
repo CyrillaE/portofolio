@@ -497,18 +497,69 @@ ul.nav-links{
 	font-size: 18px;
 	padding-right: 0px;
 }
+
+.skillsText{
+	width: 80%;
+	margin: auto;
+	color: #211656;
+	font-size: 18px;
+}
 	
 }
 
 /*------------------------------------------------------------------*/
 /*                         Projects Page                            */
 /*------------------------------------------------------------------*/
+
+.containerProjectsRight{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	margin-left: 16%;
+	margin-right: 16%;
+	margin-bottom: 170px;
+	color: #211656;
+	font-size: 15px;
+	position: relative;
+}
+
+.containerProjectsLeft{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	margin-left: 16%;
+	margin-right: 16%;
+	margin-bottom: 170px;
+	color: #211656;
+	font-size: 15px;
+	position: relative;
+}
+
+.aboutTextRightProject{
+	padding-left: 80px;
+	font-size: 20px;
+	margin: 30px;
+}
+
+.aboutTextLeftProjects{
+	padding: 20px;
+	padding-left: 0px;
+	font-size: 20px;
+	
+}
+
+
 #goodreadPhoto{
 	width: 30%;
 }
+
 #jobPhoto{
 	width: 570px;
 	height: auto;
+}
+#plantPhoto{
+	width: 30%;
+
 }
 
 #ufoPhoto{
@@ -620,4 +671,87 @@ ul.nav-links{
 	background-color: #211656;
 	color: #D4DCF2;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+
+	.containerProjectsRight{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		margin-bottom: 20px;
+		padding-top: 0px;
+		color: #211656;
+		font-size: 15px;
+	}
+
+	.containerProjectsLeft{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		order: 2;
+		margin: auto;
+		margin-bottom: 20px;
+		padding-top: 0px;
+		color: #211656;
+		font-size: 15px;
+		order: 1;
+	}
+
+	.aboutTextRightProject{
+		padding-left: 0px;
+		font-size: 18px;
+		margin: 0px;
+	}
+
+	.aboutTextLeftProjects{
+		padding: 0px;
+		padding-left: 0px;
+		font-size: 18px;
+		
+	}
+
+	#goodreadPhoto, #jobPhoto, #plantPhoto, #ufoPhoto{
+		width: 100%;
+		margin: auto;
+		margin-top: 0px;
+	}
+
+	#goodreadTitle, #jobTitle, #plantTitle, #ufoTitle{
+		position: relative;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 5px;
+		text-align: center;
+		left: 0%;
+		bottom: 0px;
+		font-size: 24px;
+		padding: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-radius: 2px;
+	}
+
+	#goodreadButton, #jobButton, #plantButton, #ufoButton{
+		position: relative;
+		bottom: 0px;
+		width: 60%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 18px;
+		padding: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		left: 0%;
+		border-radius: 2px;
+		box-shadow: 3px 3px #21165620;
+
+	}
+	
+
+
+
 }

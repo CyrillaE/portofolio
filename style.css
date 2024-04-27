@@ -680,7 +680,7 @@ ul.nav-links{
 		display: flex;
 		flex-direction: column;
 		margin: auto;
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 		padding-top: 0px;
 		color: #211656;
 		font-size: 15px;
@@ -692,7 +692,7 @@ ul.nav-links{
 		flex-direction: column;
 		order: 2;
 		margin: auto;
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 		padding-top: 0px;
 		color: #211656;
 		font-size: 15px;
@@ -720,6 +720,8 @@ ul.nav-links{
 
 	#goodreadTitle, #jobTitle, #plantTitle, #ufoTitle{
 		position: relative;
+		background-color: #21165600;
+		color: #a8bdf4;
 		width: 80%;
 		margin: auto;
 		margin-bottom: 5px;
@@ -741,12 +743,13 @@ ul.nav-links{
 		margin-top: 10px;
 		margin-bottom: 10px;
 		text-align: center;
-		font-size: 18px;
+		font-size: 14px;
 		padding: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
 		left: 0%;
-		border-radius: 2px;
+		border-radius: 50%;
+		padding: 15px;
 		box-shadow: 3px 3px #21165620;
 
 	}

@@ -53,9 +53,10 @@ body{
 	.headingTitle{
 		font-size: 24px;
 		color: #211656;
-		margin-top: 20px;
-		margin-left: 8%;	
+		margin: auto;
+		margin-top: 20px;	
 		margin-bottom: 10px;
+		width: 80%;
 	}
 	
 	
@@ -114,10 +115,8 @@ ul.nav-links{
 		text-underline-offset: 0.2em;
 		background-position: right bottom;
 	}
-	.nav-links{
-		
-		margin-right: 0px;
-	
+	.nav-links{	
+		margin-right: 0px;	
 	}
 	
 }
@@ -255,7 +254,7 @@ ul.nav-links{
 
 @media screen and (max-width: 450px) {
 	#heroPhoto{
-		width: 300px;
+		width: 80%;
 		height: auto;
 		display: block;
 		margin: auto;
@@ -374,15 +373,14 @@ ul.nav-links{
 		flex-direction: column;
 		margin: 0px;
 		color: #211656;
-		padding: 0px;
-		margin-left: 8%;
-	margin-right: 8%;
+		padding: 0%;
+		margin: auto;
 	}
 	.collagePicture{
 		display: inline-block;
 		width: 300px;
+		margin: auto;
 		margin-top: 24px;
-		
 	}
 
 	#collage{
@@ -395,7 +393,8 @@ ul.nav-links{
 		padding: 0px;
 		font-size: 18px;
 		margin: 0px;
-		width: 300px;
+		width: 80%;
+		margin: auto;
 	}
 
 	.collageText{

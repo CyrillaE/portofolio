@@ -719,6 +719,10 @@ ul.nav-links{
 		margin-top: 0px;
 	}
 
+	#ufoPhoto{
+		order: 1;
+	}
+
 	#goodreadTitle, #jobTitle, #plantTitle, #ufoTitle{
 		position: relative;
 		background-color: #21165600;

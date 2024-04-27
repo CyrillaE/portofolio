@@ -46,7 +46,7 @@ body{
 		font-size: 18px;
 		float: left;
 		color: #211656;
-		padding-left: 8%;
+		padding-left: 0%;
 		margin-top: 20px;
 	}
 
@@ -108,7 +108,7 @@ ul.nav-links{
 	.nav-links li a{
 		color: #211656 ;
 		display: inline-block;
-		font-size: 15px;
+		font-size: 1px;
 		margin-top: 8px;
 		text-decoration: underline rgba(0, 0, 0, 0) 4px;
 		transition: text-decoration-color 1000ms, text-underline-offset 1000ms;
@@ -117,6 +117,13 @@ ul.nav-links{
 	}
 	.nav-links{	
 		margin-right: 0px;	
+	}
+	nav{
+		position: relative;
+		width: 80%;
+		margin: auto;
+		height: 60px;
+		background-color: white;
 	}
 	
 }
@@ -208,13 +215,13 @@ ul.nav-links{
 /*------------------------------------------------------------------*/
 
 /* ELEMENT FOR INTRODUCTION */
+
+
 #heroPhoto{
 	width: 68%;
 	height: auto;
 	display: block;
-	margin-left: 16%;
-	margin-right: 16%;
-	margin-top: 0px;
+	margin: auto;
 	padding: 0px;
 }
 
@@ -276,7 +283,7 @@ ul.nav-links{
 
 	#portfolioTitle{
 		font-size: 40px;
-		margin-top: 24px;
+		margin-top: 14px;
 		margin-bottom: 0px;
 	
 	}
@@ -381,6 +388,8 @@ ul.nav-links{
 		width: 300px;
 		margin: auto;
 		margin-top: 24px;
+		height: 300px;
+
 	}
 
 	#collage{
@@ -400,7 +409,21 @@ ul.nav-links{
 	.collageText{
 		width: 100%;
 	}
+
+	.goingBackMenu{
+		width: 80%;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		text-align: center;
+		color: #211656;
+		font-size: 20px;
+		position: relative;
+		margin: auto;
+	}
 }
+
 
 /*------------------------------------------------------------------*/
 /*                         Skills Page                              */
@@ -415,8 +438,9 @@ ul.nav-links{
 	margin-right: 16%;
 	color: #211656;
 	position: relative;
-
 }
+
+
 .skillsText{
 	margin-left: 16%;
 	margin-right: 16%;
@@ -446,6 +470,39 @@ ul.nav-links{
 	border-radius: 8px;
 }
 
+@media screen and (max-width: 450px) {
+
+	.containerSkills{
+		width: 80%;
+		flex-direction: column-reverse;
+		margin: auto;
+		
+	}
+	#officeImage{
+		width: 80%;
+		margin: auto;	
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
+	#skillImage{
+		margin-top: 100px;
+		width: 300px;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	.introSkills{	
+	font-size: 18px;
+	padding-right: 0px;
+}
+	
+}
+
+/*------------------------------------------------------------------*/
+/*                         Projects Page                            */
+/*------------------------------------------------------------------*/
 #goodreadPhoto{
 	width: 30%;
 }

@@ -31,26 +31,34 @@ body{
 	
 }
 
-@media screen and (max-width: 768px) {
-	#Logo{
-	height: 65px;
-	width: 95px;
-}
-}
-@media screen and (max-width: 450px) {
-	#Logo{
-	height: 55px;
-	width: 80px;
-}
-}
-
 .headingTitle{
 	font-size: 40px;
 	color: #211656;
 	margin-top: 100px;
 	margin-left: 16%;	
 	margin-bottom: 100px;
+}
 
+
+@media screen and (max-width: 450px) {
+	#Logo{
+		position: relative;
+		font-size: 18px;
+		float: left;
+		color: #211656;
+		padding-left: 8%;
+		margin-top: 20px;
+	}
+
+	.headingTitle{
+		font-size: 24px;
+		color: #211656;
+		margin-top: 20px;
+		margin-left: 8%;	
+		margin-bottom: 10px;
+	}
+	
+	
 }
 
 /*------------------------------------------------------------------*/
@@ -93,10 +101,28 @@ ul.nav-links{
 	transition: text-decoration-color 1000ms, text-underline-offset 1000ms;
 	text-underline-offset: 0.2em;
 	background-position: right bottom;
-
-
-
 }
+
+@media screen and (max-width: 450px) {
+	.nav-links li a{
+		color: #211656 ;
+		display: inline-block;
+		font-size: 15px;
+		margin-top: 8px;
+		text-decoration: underline rgba(0, 0, 0, 0) 4px;
+		transition: text-decoration-color 1000ms, text-underline-offset 1000ms;
+		text-underline-offset: 0.2em;
+		background-position: right bottom;
+	}
+	.nav-links{
+		
+		margin-right: 0px;
+	
+	}
+	
+}
+
+/*
 .nav-links li a:hover {
 	text-decoration-color: #D4DCF2;
 	background-position: left bottom;
@@ -173,6 +199,9 @@ ul.nav-links{
 	}
 }
 
+*/
+
+
 
 
 /*------------------------------------------------------------------*/
@@ -189,6 +218,7 @@ ul.nav-links{
 	margin-top: 0px;
 	padding: 0px;
 }
+
 
 .introPhotoContainer{
 	position: relative;
@@ -223,7 +253,40 @@ ul.nav-links{
 	text-align: center;
 }
 
+@media screen and (max-width: 450px) {
+	#heroPhoto{
+		width: 300px;
+		height: auto;
+		display: block;
+		margin: auto;
+		padding: 0px;
+	}
 
+	.bottom-left{
+		position: absolute;
+		bottom: 0px;
+		left: 10%;
+		border: solid 3px #2708c000;	  
+	}
+
+
+	#UXTitle{
+		font-size: 30px;
+		margin: 0px;
+	}
+
+	#portfolioTitle{
+		font-size: 40px;
+		margin-top: 24px;
+		margin-bottom: 0px;
+	
+	}
+	.bodyText{
+		font-size: 15px;
+	}
+	
+	
+}
 
 
 /* About Me Section */
@@ -298,11 +361,47 @@ ul.nav-links{
 
 .goingBackButton:hover{
 	text-decoration: none;
-	text-decoration-color: #bd0d7a;
+	background-color: #211656;
+	color: #D4DCF2;
 
 }
 
+@media screen and (max-width: 450px) {
 
+	.containerFlex{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		color: #211656;
+		padding: 0px;
+		margin-left: 8%;
+	margin-right: 8%;
+	}
+	.collagePicture{
+		display: inline-block;
+		width: 300px;
+		margin-top: 24px;
+		
+	}
+
+	#collage{
+		display: block;
+		width: 300px;
+		padding: 0px;
+		margin: 0px;
+	}
+	.aboutTextLeft{
+		padding: 0px;
+		font-size: 18px;
+		margin: 0px;
+		width: 300px;
+	}
+
+	.collageText{
+		width: 100%;
+	}
+}
 
 /*------------------------------------------------------------------*/
 /*                         Skills Page                              */
@@ -328,10 +427,6 @@ ul.nav-links{
 	font-size: 20px;
 }
 
-#officeImage{
-	width: 200px;
-}
-
 #skillImage{
 	margin-top: 100px;
 	width: 800px;
@@ -340,7 +435,17 @@ ul.nav-links{
 	margin: auto;
 }
 
+.introSkills{	
+	color: #211656;
+	font-size: 20px;
+	padding-right: 24px;
+}
 
+
+#officeImage{
+	width: 450px;
+	border-radius: 8px;
+}
 
 #goodreadPhoto{
 	width: 30%;

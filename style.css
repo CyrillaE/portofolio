@@ -48,7 +48,7 @@ body{
 		float: left;
 		color: #211656;
 		padding-left: 0%;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 
 	.headingTitle{
@@ -159,9 +159,7 @@ nav{
 	float: right;
 	padding: 0px;
 	margin-right: 16%;
-
 }
-
 
 .nav-links li a{
 	color: #211656 ;
@@ -186,6 +184,8 @@ nav{
 
 
 }
+
+
 @media screen and (max-width: 450px) {
 
 	.line{
@@ -196,25 +196,27 @@ nav{
 	}
 
 	nav{
-		width: 100%;
+		width: 80%;
+		height: 50px;
 		background-color: white;
+		margin: auto;
 	}
 
 	.hamburger{
 		position: absolute;
 		cursor: pointer;
-		right: 5%;
-		top: 30%;
+		right: 0%;
+		top: 50%;
 		transform: translate(-5%,-50%);
 		z-index: 4;
 	}
 	.nav-links{
 		position: fixed;
-		background: rgba(116, 77, 77, 0);
-		height: 100vh;
-		width: 100%;
-		margin-top: 7px;
+		background: #ffffff;
+		height: 800px;
+		width: 80%;
 		flex-direction: column;
+		justify-content: flex-start;
 		clip-path: circle(100px at 100% -1%);
 		-webkit-clip-path:circle(100px at 90% -10%);
 		transition: all 1s ease-out;
@@ -223,14 +225,15 @@ nav{
 
 	}
 
+
+
 	
 	.nav-links.open{
 		clip-path: circle(1000px at 100% -1%);
 		-webkit-clip-path:circle(1000px at 90% -10%);
 		pointer-events: all;
 		background-color: #ffffff;
-		margin: auto;
-
+		margin-top: 50px;
 	}
 	.nav-links li{
 		opacity: 1;
@@ -252,10 +255,10 @@ nav{
 		opacity: 1;
 	}
 }
-
+/*
 #souligneAbout, #soulignePortfolio, #souligneResume{
     text-decoration: underline rgb(223, 212, 178) 4px;
-}
+}*/
 
 
 /*------------------------------------------------------------------*/
@@ -659,7 +662,7 @@ nav{
 
 	#skillImage{
 		margin-top: 100px;
-		width: 100%;
+		width: 80%;
 		height: auto;
 		display: block;
 		margin: auto;

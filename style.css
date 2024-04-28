@@ -37,7 +37,7 @@ body{
 	color: #211656;
 	margin-top: 100px;
 	margin-left: 16%;	
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 
@@ -305,7 +305,7 @@ ul.nav-links{
 	flex-direction: rows;
 	margin-left: 16%;
 	margin-right: 16%;
-	margin-bottom: 170px;
+	margin-bottom: 100px;
 	color: #211656;
 	font-size: 15px;
 	position: relative;
@@ -342,6 +342,7 @@ ul.nav-links{
 	margin-top: 8px;
 }
 
+/*  SKILLS PAGE */
 
 .goingBackMenu{
 	width: 68%;
@@ -373,6 +374,127 @@ ul.nav-links{
 
 }
 
+/*Index page */
+
+
+.goingBackSkillProjects{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 10px;
+	font-size: 20px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.containerImageContainer{
+    position: relative;
+}
+
+.imageAboveButtonSkills{
+    position: relative;
+    width: 400px;
+	height: 280px;
+	border-radius: 5%;
+
+}
+
+.imageAboveButtonProjects{
+    position: relative;
+    width: 400px;
+	height: 280px;
+	border-radius: 5%;
+
+}
+
+
+.goingBackButtonSkills{
+    text-decoration: none;
+    color: #211656;
+    background-color: #d4dcf2d5;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border-radius: 8px;
+
+}
+.goingBackButtonProjects{
+    text-decoration: none;
+    color: #211656;
+    background-color: #d4dcf2d5;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border-radius: 8px;
+
+}
+
+.goingBackButtonProjects:hover, .goingBackButtonSkills:hover{
+
+	text-decoration: none;
+	background-color: #211656ae;
+	color: #D4DCF2;
+}
+
+@media screen and (max-width: 450px) {
+
+	.goingBackSkillProjects{
+		width: 80%;
+		flex-direction: column;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 18px;
+		margin-top: 200px;
+		color: #211656;
+		position: relative;
+		width: 100%;
+	}
+
+	.imageAboveButtonSkills, .imageAboveButtonProjects{
+		position: relative;
+		display: block;
+		width: 80%;
+		height: 200px;
+		margin: auto;
+		margin-top: 0px;
+		margin-top: 20px;
+		
+	}
+
+	.goingBackButtonProjects, .goingBackButtonSkills{
+		text-decoration: none;
+		color: #211656;
+		background-color: #d4dcf2d5;
+		padding: 4px;
+		border-radius: 4px;
+		text-decoration: none;
+		list-style: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		border-radius: 8px;
+	
+	}
+	
+	
+}
+
 @media screen and (max-width: 450px) {
 
 	.containerFlex{
@@ -380,6 +502,7 @@ ul.nav-links{
 		display: flex;
 		flex-direction: column;
 		margin: 0px;
+		margin-bottom: 20px;
 		color: #211656;
 		padding: 0%;
 		margin: auto;
@@ -389,7 +512,8 @@ ul.nav-links{
 		width: 300px;
 		margin: auto;
 		margin-top: 24px;
-		height: 300px;
+		height: 100px;
+		margin-bottom: 50px;
 
 	}
 

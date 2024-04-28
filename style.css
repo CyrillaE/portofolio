@@ -480,7 +480,7 @@ ul.nav-links{
 		
 	}
 	#officeImage{
-		width: 80%;
+		width: 100%;
 		margin: auto;	
 		margin-top: 24px;
 		margin-bottom: 24px;
@@ -685,6 +685,11 @@ ul.nav-links{
 		padding-top: 0px;
 		color: #211656;
 		font-size: 15px;
+		background-color: #d4dcf221;
+		padding: 16px;
+		border-radius: 5px;
+		box-shadow: 2px 3px #2116560c;
+
 	}
 
 	.containerProjectsLeft{
@@ -697,7 +702,10 @@ ul.nav-links{
 		padding-top: 0px;
 		color: #211656;
 		font-size: 15px;
-		order: 1;
+		background-color: #d4dcf221;
+		padding: 16px;
+		border-radius: 5px;
+		box-shadow: 2px 3px #2116560c;
 	}
 
 	.aboutTextRightProject{
@@ -717,16 +725,30 @@ ul.nav-links{
 		width: 100%;
 		margin: auto;
 		margin-top: 0px;
+		margin-bottom: 8px;
 	}
 
-	#ufoPhoto{
+	#ufoTitle, #jobTitle {
 		order: 1;
 	}
 
+	#ufoPhoto{
+		order: 2;
+	}
+
+	.aboutTextLeftProjects{
+		order: 3;
+
+	}
+	
+	#ufoButton, #jobButton{
+		order: 4;
+
+	}
 	#goodreadTitle, #jobTitle, #plantTitle, #ufoTitle{
 		position: relative;
 		background-color: #21165600;
-		color: #a8bdf4;
+		color: #211656;
 		width: 80%;
 		margin: auto;
 		margin-bottom: 5px;
@@ -758,8 +780,4 @@ ul.nav-links{
 		box-shadow: 3px 3px #21165620;
 
 	}
-	
-
-
-
 }

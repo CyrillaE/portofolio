@@ -921,7 +921,7 @@ nav{
 
 	}
 
-	#goodreadButton, #jobButton, #plantButtonComputer, #ufoButtonComputer{
+	#goodreadButton, #jobButton, #plantButton, #ufoButton{
 		display: inline;
 		position: relative;
 		bottom: 0px;

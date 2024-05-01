@@ -786,7 +786,7 @@ nav{
 #ufoTitle{
 	position: absolute;
 	left: 40%;
-	bottom: 340px;
+	bottom: 375px;
 	font-size: 40px;
 	background-color: #d4dcf285;
 	padding: 5px;
@@ -921,7 +921,7 @@ nav{
 
 	}
 
-	#goodreadButton, #jobButton, #plantButton, #ufoButton{
+	#goodreadButton, #jobButton, #plantButtonComputer, #ufoButtonComputer{
 		display: inline;
 		position: relative;
 		bottom: 0px;

@@ -962,6 +962,33 @@ nav{
 	border-radius: 5px;
 }
 
+.buttonCVPage{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 68%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+
+.buttonDirection{
+	background-color: #F3E9E0;
+	border-radius: 5px;
+	padding: 12px;
+	color: #211656b9;
+	height: 40px;
+	font-size: 24px;
+	text-align: center;
+
+}
+
+.buttonDirection:hover{
+	background-color: #211656b9;
+	color: #F3E9E0;
+	text-decoration: none;
+}
+
 @media screen and (max-width: 450px) {
 	#cvCyri{
 		padding-top: 50px;
@@ -969,9 +996,31 @@ nav{
 		height: auto;
 		display: block;
 		margin: auto;
+		box-shadow: 4px 3px #ffffff47;
+
 		
+	}
+
+	.buttonCVPage{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 80%;
+		margin: auto;
+		margin-top: 40px;
+	}
+	
+	.buttonDirection{
+		background-color: #D4DCF2;
+		border-radius: 5px;
+		padding: 6px;
+		color: #211656;
+		height: 40px;
+		font-size: 12px;
+		text-align: center;
 	}
 	
 }
+
 
 

@@ -953,10 +953,13 @@ nav{
 
 #cvCyri{
 	margin-top: 100px;
-	width: 800px;
+	width: 68%;
 	height: auto;
 	display: block;
 	margin: auto;
+	box-shadow: 4px 3px #d4dcf247;
+	margin-bottom: 50px;
+	border-radius: 5px;
 }
 
 @media screen and (max-width: 450px) {

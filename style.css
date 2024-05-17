@@ -535,6 +535,7 @@ nav{
 	width: 68%;
 	display: flex;
 	flex-direction: rows;
+	align-items: center;
 	margin-left: 16%;
 	margin-right: 16%;
 	color: #211656;
@@ -622,6 +623,7 @@ nav{
 	color: #211656;
 	font-size: 15px;
 	position: relative;
+	align-items: center;
 }
 
 .containerProjectsLeft{
@@ -634,6 +636,7 @@ nav{
 	color: #211656;
 	font-size: 15px;
 	position: relative;
+	align-items: center;
 }
 
 .aboutTextRightProject{
@@ -665,6 +668,15 @@ nav{
 #ufoPhoto{
 	width: 400px;
 }
+
+#electricPhoto{
+	width: 570px;
+	height: auto;
+}
+
+
+/* Good Read */
+
 
 #goodreadTitle{
 	position: absolute;
@@ -705,6 +717,10 @@ nav{
 	border-radius: 5px;
 }
 
+
+/* Job In */
+
+
 #jobTitle{
 	position: absolute;
 	left: 35%;
@@ -744,10 +760,12 @@ nav{
 	border-radius: 5px;
 }
 
-#plantTitle{
+
+/* Electric V */
+
+#electricTitle{
 	position: absolute;
-	left: 18%;
-	bottom: 257px;
+	bottom: 270px;
 	font-size: 40px;
 	background-color: #d4dcf285;
 	padding: 5px;
@@ -756,11 +774,24 @@ nav{
 	border-radius: 5px;
 }
 
-#plantButton{
+#electricButton{
+	position: absolute;
+	color: #211656;
+	left: 72%;
+	bottom: 0px;
+	font-size: 20px;
+	background-color: #d4dcf285;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+
+.electricComputer{
 	display: none;
 	position: absolute;
 	color: #211656;
-	left: 60%;
+	left: 55%;
 	bottom: 10px;
 	font-size: 20px;
 	background-color: #d4dcf285;
@@ -770,18 +801,7 @@ nav{
 	border-radius: 5px;
 }
 
-.plantButtonComputer{
-	position: absolute;
-	color: #211656;
-	left: 60%;
-	bottom: 10px;
-	font-size: 20px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
-}
+/*  UFO   */
 
 #ufoTitle{
 	position: absolute;
@@ -822,7 +842,8 @@ nav{
 	border-radius: 5px;
 }
 
-#goodreadButton:hover, #jobButton:hover, #plantButton:hover, #ufoButton:hover , .goodreadButtonComputer:hover, .jobButtonComputer:hover, .plantButtonComputer:hover, .ufoButtonComputer:hover {
+
+#goodreadButton:hover, #jobButton:hover, #electricButton:hover, #ufoButton:hover , .goodreadButtonComputer:hover, .jobButtonComputer:hover, .plantButtonComputer:hover, .ufoButtonComputer:hover {
 	background-color: #211656;
 	color: #D4DCF2;
 	text-decoration: none;
@@ -875,7 +896,7 @@ nav{
 		
 	}
 
-	#goodreadPhoto, #jobPhoto, #plantPhoto, #ufoPhoto{
+	#goodreadPhoto, #jobPhoto, #electricPhoto, #ufoPhoto, #goodreadPhoto{
 		width: 100%;
 		margin: auto;
 		margin-top: 0px;
@@ -899,7 +920,7 @@ nav{
 		order: 4;
 
 	}
-	#goodreadTitle, #jobTitle, #plantTitle, #ufoTitle{
+	#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle{
 		position: relative;
 		background-color: #21165600;
 		color: #211656;
@@ -916,12 +937,12 @@ nav{
 		border-radius: 2px;
 	}
 
-	.goodreadButtonComputer, .jobButtonComputer, .plantButtonComputer, .ufoButtonComputer{
+	.goodreadButtonComputer, .jobButtonComputer, .electricComputer, .ufoButtonComputer{
 		display: none;
 
 	}
 
-	#goodreadButton, #jobButton, #plantButton, #ufoButton{
+	#goodreadButton, #jobButton, #electricButton, #ufoButton{
 		display: inline;
 		position: relative;
 		bottom: 0px;

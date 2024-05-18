@@ -529,7 +529,6 @@ nav{
 		display: flex;
 		flex-direction: column;
 		margin: 0px;
-		margin-bottom: 400px;
 		color: #211656;
 		padding: 0%;
 		margin: auto;
@@ -752,7 +751,6 @@ nav{
 	grid-row-start: 1;
 	grid-row-end: 2;
 	padding-left: 30px;	
-
 }
 
 #goodreadButton{
@@ -846,7 +844,7 @@ nav{
 }
 
 #electricTitle{
-	padding: 30px;
+	padding-left: 30px;
 	font-size: 30px;
 	height: 50px;
 	width: 100%;
@@ -854,7 +852,6 @@ nav{
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
-
 }
 
 #electricButton{

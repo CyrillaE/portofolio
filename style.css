@@ -317,7 +317,48 @@ nav{
  	height: 500px; 
 }
 
+#collageOverlay{
+	position: relative;
 
+}
+
+#collage{
+	display: block;
+	width: 400px;
+	padding-top: 80px;
+	margin-top: 40px;
+}
+
+
+#collageWig{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 400px;
+	z-index: 1;
+	animation-name: wigMove;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes wigMove {
+  0% { transform: translate(1px, 9px) rotate(0deg); }
+  10% { transform: translate(-3px, -5px) rotate(-4deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 7px) rotate(8deg); }
+  40% { transform: translate(2px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, -12px) rotate(-1deg); }
+  60% { transform: translate(-6px, 1px) rotate(20deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(4deg); }
+  100% { transform: translate(1px, 9px) rotate(0deg);  }
+}
+/*
 #collage{
 	display: block;
 	position: relative;
@@ -360,6 +401,7 @@ nav{
 	margin-top: 8px;
 }
 
+*/
 /*  SKILLS PAGE */
 
 .goingBackMenu{
@@ -535,6 +577,8 @@ nav{
 
 	}
 
+
+
 	#collage{
 		width: 300px;
 		padding: 0px;
@@ -542,17 +586,16 @@ nav{
 		position: relative;
 	}
 	
+	
 	#collageWig{
 		width: 300px;
-		position: absolute;
-		top: 869px;
-		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
 		left: 0;
 		right: 0;
 		text-align: center;
 	}
+
 
 	.aboutTextLeft{
 		padding: 0px;

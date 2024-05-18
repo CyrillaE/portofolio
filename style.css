@@ -317,6 +317,7 @@ nav{
 	display: block;
 	margin: auto;
 	text-align: center;
+	margin-bottom: 300px;
 }
 
 .collagePicture{
@@ -528,7 +529,7 @@ nav{
 		display: flex;
 		flex-direction: column;
 		margin: 0px;
-		margin-bottom: 20px;
+		margin-bottom: 400px;
 		color: #211656;
 		padding: 0%;
 		margin: auto;
@@ -690,127 +691,119 @@ nav{
 
 .containerProjectsRight{
 	width: 68%;
-	display: flex;
-	flex-direction: rows;
+	display: grid;
+	grid-template-columns:  auto auto;
+	grid-template-rows:  auto auto auto;
 	margin-left: 16%;
 	margin-right: 16%;
-	margin-bottom: 170px;
+	margin-bottom: 150px;
 	color: #211656;
-	font-size: 15px;
-	position: relative;
-	align-items: center;
 }
 
 .containerProjectsLeft{
 	width: 68%;
-	display: flex;
-	flex-direction: rows;
+	display: grid;
+	grid-template-columns:  auto auto;
+	grid-template-rows:  auto auto auto;
 	margin-left: 16%;
 	margin-right: 16%;
-	margin-bottom: 170px;
+	margin-bottom: 150px;
 	color: #211656;
-	font-size: 15px;
-	position: relative;
-	align-items: center;
 }
 
 .aboutTextRightProject{
-	padding-left: 80px;
 	font-size: 20px;
-	margin: 30px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	width: 100%;
+	padding-left: 30px;	
 }
 
 .aboutTextLeftProjects{
-	padding: 20px;
-	padding-left: 0px;
 	font-size: 20px;
-}
-
-
-#goodreadPhoto{
-	width: 30%;
-}
-
-#jobPhoto{
-	width: 570px;
-	height: auto;
-}
-#plantPhoto{
-	width: 30%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	width: 100%;
+	padding-right: 30px;
 
 }
 
-#ufoPhoto{
-	width: 400px;
-}
-
-#electricPhoto{
-	width: 570px;
-	height: auto;
-}
 
 
 /* Good Read */
 
+#goodreadPhoto{
+	left: 0;
+	width: 80%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
 
 #goodreadTitle{
-	position: absolute;
-	left: 17%;
-	bottom: 390px;
-	font-size: 40px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
+	font-size: 30px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding-left: 30px;	
+
 }
 
 #goodreadButton{
 	display: none;
-	position: absolute;
 	color: #211656;
-	left: 55%;
-	bottom: 100px;
 	font-size: 20px;
 	background-color: #d4dcf285;
 	padding: 5px;
 	padding-left: 30px;
 	padding-right: 30px;
 	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 .goodreadButtonComputer{
-	position: absolute;
 	color: #211656;
-	left: 55%;
-	bottom: 100px;
 	font-size: 20px;
+	width: 50%;
+	margin: auto;
 	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
+	text-align: center;
 	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	bottom: 0;
+	right: 0;
 }
 
 
 /* Job In */
 
+#jobPhoto{
+	width: 100%;
+	height: auto;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
 
 #jobTitle{
-	position: absolute;
-	left: 35%;
-	bottom: 300px;
-	font-size: 40px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
+	font-size: 30px;
 }
 
 #jobButton{
 	display: none;
-	position: absolute;
 	color: #211656;
 	left: 16%;
 	bottom: 10px;
@@ -823,7 +816,99 @@ nav{
 }
 
 .jobButtonComputer{
-	position: absolute;
+	color: #211656;
+	font-size: 20px;
+	width: 50%;
+	margin: auto;
+	background-color: #d4dcf285;
+	text-align: center;
+	border-radius: 5px;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	
+}
+
+
+/* Electric V */
+
+
+#electricPhoto{
+	left: 0;
+	width: 550px;
+	height: 340px;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	border-radius: 2%;
+}
+
+#electricTitle{
+	padding: 30px;
+	font-size: 30px;
+	height: 50px;
+	width: 100%;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+}
+
+#electricButton{
+	color: #211656;
+	font-size: 20px;
+	width: 50%;
+	margin: auto;
+	background-color: #d4dcf285;
+	text-align: center;
+	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	bottom: 0;
+	right: 0;
+}
+
+
+.electricComputer{
+	display: none;
+	color: #211656;
+	font-size: 20px;
+	background-color: #d4dcf285;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+
+
+/*  UFO   */
+
+
+#ufoPhoto{
+	width: 100%;
+	height: auto;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+#ufoTitle{
+	font-size: 30px;
+}
+
+#ufoButton{
+	display: none;
 	color: #211656;
 	left: 16%;
 	bottom: 10px;
@@ -835,86 +920,18 @@ nav{
 	border-radius: 5px;
 }
 
-
-/* Electric V */
-
-#electricTitle{
-	position: absolute;
-	bottom: 270px;
-	font-size: 40px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
-}
-
-#electricButton{
-	position: absolute;
-	color: #211656;
-	left: 72%;
-	bottom: 0px;
-	font-size: 20px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
-}
-
-.electricComputer{
-	display: none;
-	position: absolute;
-	color: #211656;
-	left: 55%;
-	bottom: 10px;
-	font-size: 20px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
-}
-
-/*  UFO   */
-
-#ufoTitle{
-	position: absolute;
-	left: 40%;
-	bottom: 375px;
-	font-size: 40px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
-}
-
-#ufoButton{
-	display: none;
-	position: absolute;
-	color: #211656;
-	left: 20%;
-	bottom: 10px;
-	font-size: 20px;
-	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: 5px;
-}
-
 .ufoButtonComputer{
-	position: absolute;
 	color: #211656;
-	left: 20%;
-	bottom: 10px;
 	font-size: 20px;
+	width: 50%;
+	margin: auto;
 	background-color: #d4dcf285;
-	padding: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
+	text-align: center;
 	border-radius: 5px;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 
@@ -923,6 +940,43 @@ nav{
 	color: #D4DCF2;
 	text-decoration: none;
 }
+
+
+/* ANIMATION FOR  TTLE */
+
+
+#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle{	
+	animation-name: projectTitle;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes projectTitle {
+	0% { color: #211656; }
+	25% { color: #211656c6; }
+	50% { color: #21165657; }
+	75% { color: #211656c6; }
+	100% { color: #211656; }
+  }
+
+
+#goodreadPhoto, #jobPhoto, #plantPhoto, #ufoPhoto, #electricPhoto{
+	animation-name: projectPhotos;
+	animation-duration: 8s;
+}
+
+@keyframes projectPhotos {
+	0% { opacity: 0; }
+	10% { opacity: 0.1; }
+	20% { opacity: 0.2; }
+	30% { opacity: 0.3; }
+	40% { opacity: 0.4; }
+	50% { opacity: 0.5; }
+	80% { opacity: 0.8; }
+	100% { opacity: 1; }
+  }
+
 
 @media screen and (max-width: 450px) {
 
@@ -978,6 +1032,10 @@ nav{
 		margin-bottom: 8px;
 	}
 
+	#electricPhoto{
+		height: 150px;
+	}
+
 	#ufoTitle, #jobTitle {
 		order: 1;
 	}
@@ -990,6 +1048,11 @@ nav{
 		order: 3;
 
 	}
+
+	#electricTitle{
+		height: 140px;
+	}
+
 	
 	#ufoButton, #jobButton{
 		order: 4;
@@ -1035,10 +1098,6 @@ nav{
 		padding: 15px;
 		box-shadow: 2px 3px #21165610;
 	}
-
-
-
-
 }
 
 

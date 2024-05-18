@@ -200,7 +200,16 @@ nav{
 	display: block;
 	margin: auto;
 	padding: 0px;
+	position: relative;
+	animation-name: bouge;
+	animation-duration: 4s;
 }
+
+@keyframes bouge {
+	0%   {left:-1000px; top:0px; opacity: 0;}
+	100% {left:0px; top:0px; opacity: 1;}
+
+  }
 
 
 .introPhotoContainer{
@@ -300,17 +309,50 @@ nav{
 	margin: 30px;
 }
 
-.collagePicture{
-	display: inline-block;
-	height: 500px;
 
+/* Picture with the Statue */
+
+
+.collagePicture{
+ 	height: 500px; 
 }
+
+
 #collage{
 	display: block;
+	position: relative;
 	width: 400px;
 	padding-top: 80px;
 	margin-top: 40px;
 }
+
+#collageWig{
+	position: absolute;
+	width: 400px;
+	opacity:1;
+	z-index: 1;
+	right: 0px;
+  	top: 120px;
+	  animation-name: wigMove;
+	  animation-duration: 4s;
+	  animation-iteration-count: infinite;
+
+}
+
+@keyframes wigMove {
+	0% { transform: translate(1px, 9px) rotate(0deg); }
+	10% { transform: translate(-3px, -5px) rotate(-4deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 7px) rotate(8deg); }
+	40% { transform: translate(2px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-6px, 1px) rotate(4deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(4deg); }
+	100% { transform: translate(1px, 9px) rotate(0deg);  }
+  }
+
 
 .collageText{
 	display: block;
@@ -494,11 +536,23 @@ nav{
 	}
 
 	#collage{
-		display: block;
 		width: 300px;
 		padding: 0px;
 		margin: 0px;
+		position: relative;
 	}
+
+
+	
+	#collageWig{
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+		width: 300px;
+		position: absolute;
+		bottom: 0px;
+	}
+
 	.aboutTextLeft{
 		padding: 0px;
 		font-size: 18px;

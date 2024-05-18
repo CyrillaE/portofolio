@@ -312,6 +312,12 @@ nav{
 
 /* Picture with the Statue */
 
+.collageText{
+	width: 100%;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
 
 .collagePicture{
  	height: 500px; 
@@ -320,7 +326,6 @@ nav{
 #collageOverlay{
 	position: relative;
 	height: auto;
-
 }
 
 #collage{
@@ -330,9 +335,7 @@ nav{
 	margin-top: 40px;
 	height: 100%;
 	top: 0;
-
 }
-
 
 #collageWig{
 	position: absolute;
@@ -365,50 +368,6 @@ nav{
 }
 
 
-/*
-#collage{
-	display: block;
-	position: relative;
-	width: 400px;
-	padding-top: 80px;
-	margin-top: 40px;
-}
-
-#collageWig{
-	position: absolute;
-	width: 400px;
-	opacity:1;
-	z-index: 1;
-	right: 0px;
-  	top: 120px;
-	  animation-name: wigMove;
-	  animation-duration: 6s;
-	  animation-iteration-count: infinite;
-
-}
-
-@keyframes wigMove {
-	0% { transform: translate(1px, 9px) rotate(0deg); }
-	10% { transform: translate(-3px, -5px) rotate(-4deg); }
-	20% { transform: translate(-3px, 0px) rotate(1deg); }
-	30% { transform: translate(3px, 7px) rotate(8deg); }
-	40% { transform: translate(2px, -1px) rotate(1deg); }
-	50% { transform: translate(-1px, -12px) rotate(-1deg); }
-	60% { transform: translate(-6px, 1px) rotate(20deg); }
-	70% { transform: translate(3px, 1px) rotate(-1deg); }
-	80% { transform: translate(-1px, -1px) rotate(1deg); }
-	90% { transform: translate(1px, 2px) rotate(4deg); }
-	100% { transform: translate(1px, 9px) rotate(0deg);  }
-  }
-
-
-.collageText{
-	display: block;
-	text-align: center;
-	margin-top: 8px;
-}
-
-*/
 /*  SKILLS PAGE */
 
 .goingBackMenu{
@@ -615,6 +574,7 @@ nav{
 
 	.collageText{
 		width: 100%;
+		text-align: center;
 	}
 
 	.goingBackMenu{

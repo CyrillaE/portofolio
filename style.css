@@ -44,7 +44,7 @@ body{
 @media screen and (max-width: 450px) {
 	#Logo{
 		position: relative;
-		font-size: 18px;
+		font-size: 22px;
 		float: left;
 		color: #211656;
 		padding-left: 0%;

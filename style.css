@@ -737,7 +737,8 @@ nav{
 
 #goodreadPhoto{
 	left: 0;
-	width: 70%;
+	width: 100%;
+	height: 450px;
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
@@ -1027,6 +1028,7 @@ nav{
 
 	#goodreadPhoto, #jobPhoto, #electricPhoto, #ufoPhoto, #goodreadPhoto{
 		width: 100%;
+		height: auto;
 		margin: auto;
 		margin-top: 0px;
 		margin-bottom: 8px;

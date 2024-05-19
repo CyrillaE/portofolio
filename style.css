@@ -38,7 +38,17 @@ body{
 	margin-top: 100px;
 	margin-left: 16%;	
 	margin-bottom: 50px;
+	position: relative;
+	animation-name: moveTitle;
+	animation-duration: 3s;
 }
+
+@keyframes moveTitle {
+	0%   {left:-1000px; top:0px; opacity: 0;}
+	100% {left:0px; top:0px; opacity: 1;}
+
+}
+
 
 
 @media screen and (max-width: 450px) {
@@ -59,7 +69,6 @@ body{
 		margin-bottom: 10px;
 		width: 80%;
 	}
-	
 	
 }
 
@@ -118,7 +127,7 @@ nav{
 
 	.line{
 		width: 30px;
-		height: 3px;
+		height: 2px;
 		background: #211656;
 		margin: 5px;
 	}
@@ -181,10 +190,6 @@ nav{
 		opacity: 1;
 	}
 }
-/*
-#souligneAbout, #soulignePortfolio, #souligneResume{
-    text-decoration: underline rgb(223, 212, 178) 4px;
-}*/
 
 
 /*------------------------------------------------------------------*/
@@ -209,7 +214,7 @@ nav{
 	0%   {left:-1000px; top:0px; opacity: 0;}
 	100% {left:0px; top:0px; opacity: 1;}
 
-  }
+}
 
 
 .introPhotoContainer{
@@ -261,7 +266,6 @@ nav{
 		border: solid 3px #2708c000;	  
 	}
 
-
 	#UXTitle{
 		font-size: 30px;
 		margin: 0px;
@@ -276,7 +280,6 @@ nav{
 	.bodyText{
 		font-size: 15px;
 	}
-	
 	
 }
 
@@ -317,7 +320,8 @@ nav{
 	display: block;
 	margin: auto;
 	text-align: center;
-	margin-bottom: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .collagePicture{
@@ -369,7 +373,178 @@ nav{
 }
 
 
-/*  SKILLS PAGE */
+/* Mobile App */ 
+
+@media screen and (max-width: 450px) {
+
+	.containerFlex{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		color: #211656;
+		padding: 0%;
+		margin: auto;
+	}
+	.collagePicture{
+		display: inline-block;
+		width: 300px;
+		margin: auto;
+		margin-top: 24px;
+		height: 100px;
+		margin-bottom: 50px;
+
+	}
+	#collage{
+		width: 300px;
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+	}
+	
+	#collageWig{
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		padding-top: 0px;
+		text-align: center;
+	}
+	.aboutTextLeft{
+		padding: 0px;
+		font-size: 18px;
+		margin: 0px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.collageText{
+		width: 100%;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+}
+
+/*Index page 
+
+
+.goingBackSkillProjects{
+	width: 68%;
+	display: flex;
+	flex-direction: rows;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 10px;
+	font-size: 20px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.containerImageContainer{
+    position: relative;
+}
+
+.imageAboveButtonSkills{
+    position: relative;
+    width: 400px;
+	height: 280px;
+	border-radius: 2%;
+}
+
+.imageAboveButtonProjects{
+    position: relative;
+    width: 400px;
+	height: 280px;
+	border-radius: 2%;
+}
+
+
+.goingBackButtonSkills{
+    text-decoration: none;
+    color: #211656;
+    background-color: #d4dcf2d5;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border-radius: 8px;
+}
+
+.goingBackButtonProjects{
+    text-decoration: none;
+    color: #211656;
+    background-color: #d4dcf2d5;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border-radius: 8px;
+} 
+
+.goingBackButtonProjects:hover, .goingBackButtonSkills:hover{
+	text-decoration: none;
+	background-color: #211656ae;
+	color: #D4DCF2;
+}
+
+
+@media screen and (max-width: 450px) {
+	.goingBackSkillProjects{
+		width: 80%;
+		flex-direction: column;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 18px;
+		margin-top: 200px;
+		color: #211656;
+		position: relative;
+		width: 100%;
+	}
+	.imageAboveButtonSkills, .imageAboveButtonProjects{
+		position: relative;
+		display: block;
+		width: 80%;
+		height: 200px;
+		margin: auto;
+		margin-top: 0px;
+		margin-top: 20px;	
+	}
+	.goingBackButtonProjects, .goingBackButtonSkills{
+		text-decoration: none;
+		color: #211656;
+		background-color: #d4dcf2d5;
+		padding: 4px;
+		border-radius: 4px;
+		text-decoration: none;
+		list-style: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		border-radius: 8px;
+	
+	}
+
+}
+
+*/
+
+/*------------------------------------------------------------------*/
+/*                         Skills Page                              */
+/*------------------------------------------------------------------*/
 
 .goingBackMenu{
 	width: 68%;
@@ -401,181 +576,8 @@ nav{
 
 }
 
-/*Index page */
-
-
-.goingBackSkillProjects{
-	width: 68%;
-	display: flex;
-	flex-direction: rows;
-	justify-content: space-between;
-	margin: auto;
-	margin-bottom: 10px;
-	font-size: 20px;
-	margin: auto;
-	margin-bottom: 40px;
-}
-
-.containerImageContainer{
-    position: relative;
-}
-
-.imageAboveButtonSkills{
-    position: relative;
-    width: 400px;
-	height: 280px;
-	border-radius: 2%;
-
-}
-
-.imageAboveButtonProjects{
-    position: relative;
-    width: 400px;
-	height: 280px;
-	border-radius: 2%;
-
-}
-
-
-.goingBackButtonSkills{
-    text-decoration: none;
-    color: #211656;
-    background-color: #d4dcf2d5;
-    padding: 8px;
-    border-radius: 8px;
-    text-decoration: none;
-    list-style: none;
-    position: absolute;
-    left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 40px;
-	border-radius: 8px;
-
-}
-.goingBackButtonProjects{
-    text-decoration: none;
-    color: #211656;
-    background-color: #d4dcf2d5;
-    padding: 8px;
-    border-radius: 8px;
-    text-decoration: none;
-    list-style: none;
-    position: absolute;
-    left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 40px;
-	border-radius: 8px;
-
-}
-
-.goingBackButtonProjects:hover, .goingBackButtonSkills:hover{
-
-	text-decoration: none;
-	background-color: #211656ae;
-	color: #D4DCF2;
-}
-
 @media screen and (max-width: 450px) {
 
-	.goingBackSkillProjects{
-		width: 80%;
-		flex-direction: column;
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-bottom: 18px;
-		margin-top: 200px;
-		color: #211656;
-		position: relative;
-		width: 100%;
-	}
-
-	.imageAboveButtonSkills, .imageAboveButtonProjects{
-		position: relative;
-		display: block;
-		width: 80%;
-		height: 200px;
-		margin: auto;
-		margin-top: 0px;
-		margin-top: 20px;
-		
-	}
-
-	.goingBackButtonProjects, .goingBackButtonSkills{
-		text-decoration: none;
-		color: #211656;
-		background-color: #d4dcf2d5;
-		padding: 4px;
-		border-radius: 4px;
-		text-decoration: none;
-		list-style: none;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		padding: 20px;
-		border-radius: 8px;
-	
-	}
-	
-	
-}
-
-@media screen and (max-width: 450px) {
-
-	.containerFlex{
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		margin: 0px;
-		color: #211656;
-		padding: 0%;
-		margin: auto;
-	}
-	.collagePicture{
-		display: inline-block;
-		width: 300px;
-		margin: auto;
-		margin-top: 24px;
-		height: 100px;
-		margin-bottom: 50px;
-
-	}
-
-
-	#collage{
-		width: 300px;
-		padding: 0px;
-		margin: 0px;
-		position: relative;
-	}
-	
-	
-	#collageWig{
-		width: 300px;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
-		top: 0;
-		padding-top: 0px;
-		text-align: center;
-	}
-
-
-	.aboutTextLeft{
-		padding: 0px;
-		font-size: 18px;
-		margin: 0px;
-		width: 80%;
-		margin: auto;
-	}
-
-	.collageText{
-		width: 100%;
-		text-align: center;
-	}
 
 	.goingBackMenu{
 		width: 80%;
@@ -592,10 +594,10 @@ nav{
 }
 
 
+
 /*------------------------------------------------------------------*/
 /*                         Skills Page                              */
 /*------------------------------------------------------------------*/
-
 
 .containerSkills{
 	width: 68%;
@@ -607,7 +609,6 @@ nav{
 	color: #211656;
 	position: relative;
 }
-
 
 .skillsText{
 	margin-left: 16%;
@@ -632,20 +633,20 @@ nav{
 	padding-right: 24px;
 }
 
-
 #officeImage{
 	position: relative;
 	width: 450px;
 	border-radius: 8px;
 	animation-name: officeMoving;
-	animation-duration: 6s;
+	animation-duration: 3s;
 }
 
 
 @keyframes officeMoving {
-	0%   {right:-100px; top:0px; opacity: 0;}
-	100% {right:0px; top:0px; opacity: 1;}
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
   }
+
 
 @media screen and (max-width: 450px) {
 
@@ -687,6 +688,7 @@ nav{
 /*------------------------------------------------------------------*/
 /*                         Projects Page                            */
 /*------------------------------------------------------------------*/
+
 
 .containerProjectsRight{
 	width: 68%;
@@ -731,17 +733,17 @@ nav{
 
 }
 
-
-
-/* Good Read */
+/************** Good Read ************/
 
 #goodreadPhoto{
 	left: 0;
-	width: 80%;
+	width: 70%;
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 4;
+	display: block;
+	text-align: center;
 }
 
 #goodreadTitle{
@@ -785,15 +787,18 @@ nav{
 }
 
 
-/* Job In */
+/************** Job In ************/
 
 #jobPhoto{
-	width: 100%;
+	width: 500px;
+	height: 300px;
 	height: auto;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 4;
+	justify-self: end;
+
 }
 
 #jobTitle{
@@ -829,13 +834,13 @@ nav{
 }
 
 
-/* Electric V */
+/************** Electric V ************/
 
 
 #electricPhoto{
 	left: 0;
-	width: 550px;
-	height: 340px;
+	width: 500px;
+	height: 300px;
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
@@ -886,9 +891,7 @@ nav{
 	grid-row-end: 4;
 }
 
-
-
-/*  UFO   */
+/************** UFO ************/
 
 
 #ufoPhoto{
@@ -939,12 +942,12 @@ nav{
 }
 
 
-/* ANIMATION FOR  TTLE */
+/* ANIMATION FOR  TITLE */
 
 
 #goodreadTitle, #jobTitle, #electricTitle, #ufoTitle{	
 	animation-name: projectTitle;
-	animation-duration: 8s;
+	animation-duration: 3s;
 	animation-iteration-count: infinite;
 }
 
@@ -1125,10 +1128,10 @@ nav{
 }
 
 .buttonDirection{
-	background-color: #F3E9E0;
+	color: #211656;
+	background-color: #D4DCF2;	
 	border-radius: 5px;
 	padding: 12px;
-	color: #211656b9;
 	height: 40px;
 	font-size: 24px;
 	text-align: center;
@@ -1136,9 +1139,9 @@ nav{
 }
 
 .buttonDirection:hover{
-	background-color: #211656b9;
-	color: #F3E9E0;
 	text-decoration: none;
+	background-color: #211656;
+	color: #D4DCF2;
 }
 
 @media screen and (max-width: 450px) {

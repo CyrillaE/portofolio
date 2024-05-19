@@ -1036,7 +1036,7 @@ nav{
 		height: 150px;
 	}
 
-	#ufoTitle, #jobTitle {
+	#ufoTitle {
 		order: 1;
 	}
 
@@ -1051,6 +1051,7 @@ nav{
 
 	#electricTitle{
 		height: 140px;
+
 	}
 
 	
@@ -1063,6 +1064,7 @@ nav{
 		background-color: #21165600;
 		color: #211656;
 		width: 80%;
+		height: auto;
 		margin: auto;
 		margin-bottom: 5px;
 		text-align: center;
@@ -1106,7 +1108,7 @@ nav{
 /*------------------------------------------------------------------*/
 
 
-#cvCyri{
+.cvCyri{
 	margin-top: 100px;
 	width: 68%;
 	height: auto;
@@ -1135,7 +1137,6 @@ nav{
 	height: 40px;
 	font-size: 24px;
 	text-align: center;
-
 }
 
 .buttonDirection:hover{
@@ -1145,15 +1146,14 @@ nav{
 }
 
 @media screen and (max-width: 450px) {
-	#cvCyri{
+	.cvCyri{
 		padding-top: 20px;
 		width: 80%;
 		height: auto;
 		display: block;
 		margin: auto;
-		box-shadow: 4px 3px #ffffff47;
-
-		
+		margin-bottom: 10px;
+		box-shadow: 4px 3px #ffffff47;	
 	}
 
 	.buttonCVPage{
@@ -1163,6 +1163,7 @@ nav{
 		width: 80%;
 		margin: auto;
 		margin-top: 40px;
+		margin-bottom: 50px;
 	}
 	
 	.buttonDirection{
@@ -1173,9 +1174,7 @@ nav{
 		height: 40px;
 		font-size: 12px;
 		text-align: center;
-		box-shadow: 3px 2px #d4dcf230;
-
-	
+		box-shadow: 3px 2px #d4dcf230;	
 	}
 	
 }

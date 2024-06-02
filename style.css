@@ -618,7 +618,7 @@ nav{
 	grid-row-start: 2;
 	grid-row-end: 3;
 	width: 100%;
-	padding-right: 30px;
+	padding-right: 20px;
 
 }
 
@@ -677,26 +677,22 @@ nav{
 	right: 0;
 }
 
+/************** Wedding ************/
 
-/************** Job In ************/
-
-#jobPhoto{
-	width: 500px;
-	height: 300px;
+#wddingPhoto{
+	width: 100%;
 	height: auto;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 4;
-	justify-self: end;
-
 }
 
-#jobTitle{
+#weddingTitle{
 	font-size: 30px;
 }
 
-#jobButton{
+#weddingButton{
 	display: none;
 	color: #211656;
 	left: 16%;
@@ -709,7 +705,7 @@ nav{
 	border-radius: 5px;
 }
 
-.jobButtonComputer{
+.weddingButtonComputer{
 	color: #211656;
 	font-size: 20px;
 	width: 30%;
@@ -721,6 +717,60 @@ nav{
 	grid-column-end: 2;
 	grid-row-start: 3;
 	grid-row-end: 4;
+}
+
+/************** Job In ************/
+
+#jobPhoto{
+	width: 500px;
+	height: 300px;
+	height: auto;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	justify-self: end;
+
+}
+
+#jobTitle{
+	font-size: 30px;
+	font-size: 30px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#jobButton{
+	display: none;
+	color: #211656;
+	font-size: 20px;
+	background-color: #d4dcf285;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.jobButtonComputer{
+	color: #211656;
+	font-size: 20px;
+	width: 30%;
+	margin: auto;
+	background-color: #d4dcf285;
+	text-align: center;
+	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	bottom: 0;
+	right: 0;
 	
 }
 
@@ -732,15 +782,14 @@ nav{
 	left: 0;
 	width: 500px;
 	height: 300px;
-	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;
 	grid-row-start: 1;
 	grid-row-end: 4;
 	border-radius: 2%;
 }
 
 #electricTitle{
-	padding-left: 30px;
 	font-size: 30px;
 	height: 50px;
 	width: 100%;
@@ -788,27 +837,34 @@ nav{
 #ufoPhoto{
 	width: 100%;
 	height: auto;
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 4;
 }
 
 #ufoTitle{
 	font-size: 30px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding-left: 30px;	
 }
 
 #ufoButton{
 	display: none;
 	color: #211656;
-	left: 16%;
-	bottom: 10px;
 	font-size: 20px;
 	background-color: #d4dcf285;
 	padding: 5px;
 	padding-left: 30px;
 	padding-right: 30px;
 	border-radius: 5px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 .ufoButtonComputer{
@@ -819,14 +875,16 @@ nav{
 	background-color: #d4dcf285;
 	text-align: center;
 	border-radius: 5px;
-	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
 	grid-row-start: 3;
 	grid-row-end: 4;
+	bottom: 0;
+	right: 0;
 }
 
 
-#goodreadButton:hover, #jobButton:hover, #electricButton:hover, #ufoButton:hover , .goodreadButtonComputer:hover, .jobButtonComputer:hover, .plantButtonComputer:hover, .ufoButtonComputer:hover {
+#goodreadButton:hover, #jobButton:hover, #electricButton:hover, #ufoButton:hover , .goodreadButtonComputer:hover, .jobButtonComputer:hover, .plantButtonComputer:hover, .ufoButtonComputer:hover, #weddingButton:hover, .weddingButtonComputer:hover {
 	background-color: #211656;
 	color: #D4DCF2;
 	text-decoration: none;
@@ -836,7 +894,7 @@ nav{
 /* ANIMATION FOR  TITLE */
 
 
-#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle{	
+#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle, #weddingTitle{	
 	animation-name: projectTitle;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
@@ -852,7 +910,7 @@ nav{
   }
 
 
-#goodreadPhoto, #jobPhoto, #plantPhoto, #ufoPhoto, #electricPhoto{
+#goodreadPhoto, #jobPhoto, #plantPhoto, #ufoPhoto, #electricPhoto, #wddingPhoto{
 	animation-name: projectPhotos;
 	animation-duration: 8s;
 }
@@ -891,7 +949,6 @@ nav{
 		width: 80%;
 		display: flex;
 		flex-direction: column;
-		order: 2;
 		margin: auto;
 		margin-bottom: 50px;
 		padding-top: 0px;
@@ -913,10 +970,12 @@ nav{
 		padding: 0px;
 		padding-left: 0px;
 		font-size: 18px;
+		order: 2;
+
 		
 	}
 
-	#goodreadPhoto, #jobPhoto, #electricPhoto, #ufoPhoto, #goodreadPhoto{
+	#goodreadPhoto, #jobPhoto, #electricPhoto, #ufoPhoto, #goodreadPhoto, #wddingPhoto{
 		width: 100%;
 		height: auto;
 		margin: auto;
@@ -929,17 +988,16 @@ nav{
 	}
 
 	#ufoTitle {
-		order: 1;
+		order: -2;
+		font-size: 24px;
+		text-align: center;
+		padding: 0px;
 	}
 
-	#ufoPhoto{
-		order: 2;
+	#ufoPhoto, #jobPhoto{
+		order: -1;
 	}
 
-	.aboutTextLeftProjects{
-		order: 3;
-
-	}
 
 	#electricTitle{
 		height: 140px;
@@ -947,11 +1005,10 @@ nav{
 	}
 
 	
-	#ufoButton, #jobButton{
-		order: 4;
-
+	#ufoButton, #jobButton, #weddingButton{
+		order: 6;
 	}
-	#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle{
+	#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle #weddingTitle{
 		position: relative;
 		background-color: #21165600;
 		color: #211656;
@@ -967,14 +1024,20 @@ nav{
 		padding-left: 0px;
 		padding-right: 0px;
 		border-radius: 2px;
+		font-size: 24px;
 	}
 
-	.goodreadButtonComputer, .jobButtonComputer, .electricComputer, .ufoButtonComputer{
+	#weddingTitle{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.goodreadButtonComputer, .jobButtonComputer, .electricComputer, .ufoButtonComputer, .weddingButtonComputer{
 		display: none;
 
 	}
 
-	#goodreadButton, #jobButton, #electricButton, #ufoButton{
+	#goodreadButton, #jobButton, #electricButton, #ufoButton, #weddingButton{
 		display: inline;
 		position: relative;
 		bottom: 0px;

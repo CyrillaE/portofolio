@@ -740,6 +740,7 @@ nav{
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	padding-left: 30px;	
 }
 
 #jobButton{

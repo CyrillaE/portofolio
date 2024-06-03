@@ -1005,7 +1005,7 @@ nav{
 	}
 
 	
-	#ufoButton, #workButton, #weddingButton{
+	#ufoButton, #workButton, #weddingButton, #electricButton{
 		order: 6;
 	}
 	#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle #weddingTitle{

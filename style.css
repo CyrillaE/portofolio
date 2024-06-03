@@ -619,7 +619,6 @@ nav{
 	grid-row-end: 3;
 	width: 100%;
 	padding-right: 20px;
-
 }
 
 /************** Good Read ************/
@@ -664,7 +663,7 @@ nav{
 .goodreadButtonComputer{
 	color: #211656;
 	font-size: 20px;
-	width: 30%;
+	width: 40%;
 	margin: auto;
 	background-color: #d4dcf285;
 	text-align: center;
@@ -708,7 +707,7 @@ nav{
 .weddingButtonComputer{
 	color: #211656;
 	font-size: 20px;
-	width: 30%;
+	width: 40%;
 	margin: auto;
 	background-color: #d4dcf285;
 	text-align: center;
@@ -721,7 +720,7 @@ nav{
 
 /************** Job In ************/
 
-#jobPhoto{
+#workPhoto{
 	width: 500px;
 	height: 300px;
 	height: auto;
@@ -733,7 +732,7 @@ nav{
 
 }
 
-#jobTitle{
+#workTitle{
 	font-size: 30px;
 	font-size: 30px;
 	grid-column-start: 2;
@@ -743,7 +742,7 @@ nav{
 	padding-left: 30px;	
 }
 
-#jobButton{
+#workButton{
 	display: none;
 	color: #211656;
 	font-size: 20px;
@@ -758,10 +757,10 @@ nav{
 	grid-row-end: 4;
 }
 
-.jobButtonComputer{
+.workButtonComputer{
 	color: #211656;
 	font-size: 20px;
-	width: 30%;
+	width: 40%;
 	margin: auto;
 	background-color: #d4dcf285;
 	text-align: center;
@@ -783,8 +782,8 @@ nav{
 	left: 0;
 	width: 500px;
 	height: 300px;
-	grid-column-start: 3;
-	grid-column-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 4;
 	border-radius: 2%;
@@ -794,8 +793,8 @@ nav{
 	font-size: 30px;
 	height: 50px;
 	width: 100%;
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 2;
 }
@@ -803,13 +802,13 @@ nav{
 #electricButton{
 	color: #211656;
 	font-size: 20px;
-	width: 30%;
+	width: 40%;
 	margin: auto;
 	background-color: #d4dcf285;
 	text-align: center;
 	border-radius: 5px;
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
 	grid-row-start: 3;
 	grid-row-end: 4;
 	bottom: 0;
@@ -885,7 +884,7 @@ nav{
 }
 
 
-#goodreadButton:hover, #jobButton:hover, #electricButton:hover, #ufoButton:hover , .goodreadButtonComputer:hover, .jobButtonComputer:hover, .plantButtonComputer:hover, .ufoButtonComputer:hover, #weddingButton:hover, .weddingButtonComputer:hover {
+#goodreadButton:hover, #workButton:hover, #electricButton:hover, #ufoButton:hover , .goodreadButtonComputer:hover, .workButtonComputer:hover, .plantButtonComputer:hover, .ufoButtonComputer:hover, #weddingButton:hover, .weddingButtonComputer:hover {
 	background-color: #211656;
 	color: #D4DCF2;
 	text-decoration: none;
@@ -895,7 +894,7 @@ nav{
 /* ANIMATION FOR  TITLE */
 
 
-#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle, #weddingTitle{	
+#goodreadTitle, #workTitle, #electricTitle, #ufoTitle, #weddingTitle{	
 	animation-name: projectTitle;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
@@ -911,7 +910,7 @@ nav{
   }
 
 
-#goodreadPhoto, #jobPhoto, #plantPhoto, #ufoPhoto, #electricPhoto, #wddingPhoto{
+#goodreadPhoto, #workPhoto, #plantPhoto, #ufoPhoto, #electricPhoto, #wddingPhoto{
 	animation-name: projectPhotos;
 	animation-duration: 8s;
 }
@@ -976,7 +975,7 @@ nav{
 		
 	}
 
-	#goodreadPhoto, #jobPhoto, #electricPhoto, #ufoPhoto, #goodreadPhoto, #wddingPhoto{
+	#goodreadPhoto, #workPhoto, #electricPhoto, #ufoPhoto, #goodreadPhoto, #wddingPhoto{
 		width: 100%;
 		height: auto;
 		margin: auto;
@@ -995,7 +994,7 @@ nav{
 		padding: 0px;
 	}
 
-	#ufoPhoto, #jobPhoto{
+	#ufoPhoto, #workPhoto{
 		order: -1;
 	}
 
@@ -1006,7 +1005,7 @@ nav{
 	}
 
 	
-	#ufoButton, #jobButton, #weddingButton{
+	#ufoButton, #workButton, #weddingButton{
 		order: 6;
 	}
 	#goodreadTitle, #jobTitle, #electricTitle, #ufoTitle #weddingTitle{
@@ -1033,12 +1032,12 @@ nav{
 		text-align: center;
 	}
 
-	.goodreadButtonComputer, .jobButtonComputer, .electricComputer, .ufoButtonComputer, .weddingButtonComputer{
+	.goodreadButtonComputer, .workButtonComputer, .electricComputer, .ufoButtonComputer, .weddingButtonComputer{
 		display: none;
 
 	}
 
-	#goodreadButton, #jobButton, #electricButton, #ufoButton, #weddingButton{
+	#goodreadButton, #workButton, #electricButton, #ufoButton, #weddingButton{
 		display: inline;
 		position: relative;
 		bottom: 0px;

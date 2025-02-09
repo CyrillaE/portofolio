@@ -729,6 +729,8 @@ nav{
 	grid-row-start: 1;
 	grid-row-end: 4;
 	justify-self: end;
+	border-radius: 5px;
+
 
 }
 
